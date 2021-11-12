@@ -7,11 +7,11 @@ import { TodoserviceService } from '../todoservice.service';
   styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent implements OnInit {
-  public employees:any=[]
+  public list:any=[]
   constructor(private emp1:TodoserviceService) { }
 
   ngOnInit(): void {
-    this.employees=this.emp1.getEmployee()
+    this.list=this.emp1.getEmployee()
   }
 
 }
