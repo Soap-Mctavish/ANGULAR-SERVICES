@@ -4,11 +4,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class TodoserviceService {
-  public employees=[
+  public list=[
     {"name":""}
   ]
 getEmployee(){
-  return this.employees
+  return this.list
 }
   constructor() { }
 }
